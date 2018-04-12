@@ -13,7 +13,7 @@
     \tableofcontents
     
     \section{About}
-    Git is one of the most helpful tools a developer can have at his or her disposal. It practically gives you super powers, allowing you to roll back undesirable changes, quickly switch between development tasks, and organize all of your projects - for free. \\ \\
+    Git is one of the most helpful tools a developer can have at his or her disposal. It practically gives you super powers, allowing you to roll back undesirable changes, quickly switch between development tasks, and organize all of your projects - \textbf{for free}. \\ \\
     
     \section{Downloading Github Desktop}
     The first thing you should do for this lab, is download the Github Desktop client from https://desktop.github.com/. \emph{If you are on Linux, you will have to use either GitKraken, or the Command Line Interface (CLI) for this lab. Ask a TA if you need help.} \\ \\
@@ -30,25 +30,25 @@
         
         \begin{enumerate}
             
-            \item Name: hello\_world
+            \item Name: hello\_world.
             
-            \item Description: Intro hello world program for Git
+            \item Description: Intro hello world program for Git.
             
             \item Local path: \emph{Wherever you want to save it}.
             
             \item Check ``Initialize this repository with a README''.
             
-            \item Choose C++ for the Git Ignore file
+            \item Choose C++ for the Git Ignore file.
             
-            \item Licence: MIT \emph{This doesn't matter, I encourage you to look at https://choosealicense.com/ if you are in doubt}
+            \item Licence: MIT \emph{This doesn't matter, I encourage you to look at https://choosealicense.com/ if you are in doubt}.
             
             \includegraphics{screenshots/shot2.bmp}
             
         \end{enumerate}
 
-        \item Click ``Create repository''
+        \item Click ``Create repository''.
 
-        \item \emph{Wait}
+        \item \emph{Wait}!
 
         \item Once the initialization is complete, navigate to the folder you have created and examine the contents. \\ \\
 
@@ -67,7 +67,7 @@
     In Git, saved changes are called \emph{Commits}. Now that you've made changes to your README, navigate back to the Github Desktop Client, and take a moment to examine what the software is presenting you. \\ \\ % 4
     \includegraphics{screenshots/shot4.bmp}
     \\
-    On the right, you will see a \emph{Git Diff}, where lines added are highlighted in green, and lines removed are highlighted in red. Now, add a message to the left-hand panel, and commit the changes to master. Note that the description for this change is optional, modifying the README is self-evident, \textbf{other changes will not be}.
+    On the right, you will see a \emph{Git Diff}, where the lines added are highlighted in green, and the lines removed are highlighted in red. Now, add a message to the left-hand panel, and commit the changes to master. Note that the description for this change is optional, modifying the README is self-evident, \textbf{other changes will not be}.
 
     \section{History}
     Once you have committed this change, click over to the history tab and take a look at the graphical interpretation of the current Git Log for the repository. There should be two commits at this point, one for the initial commit, and one with your initial README modifications. If this is not the case please let a TA know. \\ \\ % 5
@@ -78,12 +78,12 @@
     Now select \emph{Publish Repository}, look over the suggested settings, and hit \emph{Publish repository} once you are satisfied that the options fit your needs (hint: they normally are). \\ \\ % 6
     \includegraphics{screenshots/shot6.bmp}
     \\ \\
-    You may notice, at this point, the ``Keep this code private'' option; this is highly valuable while you are a student, as it lets you host your assignments on Github, and not violate any academic codes. As students, you get unlimited private repositories for free, after signing up for the Github Student Pack (https://education.github.com/pack).
+    You may notice, at this point, the ``Keep this code private'' option; this is highly valuable when you are a student, as it lets you host your assignments on Github, and not violate any academic codes. As students, you get to create unlimited private repositories for free, after signing up for the Github Student Pack (https://education.github.com/pack).
     \\ \\
     If you are anything like your TAs you will be eternally grateful for the online copies of your work when your system inevitably crashes fatally the night before a project is due.
 
     \section{Branching}
-    Branching in Git is, essentially, a way to maintain multiple copies of code, at the same time. Many developers use branches to test new features in parallel, cooperate on new ideas, and generally develop in a safe manner. If you branch, attempt a new solution, and horribly mess-up, \textbf{you can \emph{check out} another branch will bring you back to a functional state within moments}.
+    Branching in Git is, essentially, a way to maintain multiple copies of code, at the same time. Many developers use branches to test new features in parallel, cooperate on new ideas, and generally develop in a safe manner. If you branch, attempt a new solution, and horribly mess-up, \textbf{you can \emph{check out} another branch}. This will bring you back to a functional state within moments.
     \\ \\
     To create a new branch:
     \begin{enumerate}
@@ -92,19 +92,19 @@
         % 7
         \includegraphics{screenshots/shot7.bmp}
 
-        \item Once you have filled in an appropriate name, select \emph{Create Branch}
+        \item Once you have filled in an appropriate name, clicl \emph{Create Branch}.
     \end{enumerate}
-    Now, let's add some files to our project!
+    Now, let us add some files to our project!
     \begin{enumerate}
         \item Navigate back to the folder, and create a new \verb|main.cc| file.
 
         \item Create a program that writes ``Hello World!'' to the command line.
     \end{enumerate}
-    Finally, let's commit these changes to our new branch.
+    Finally, let us commit these changes to our new branch.
     \begin{enumerate}
         \item Navigate back to the Github Application.
 
-        \item Look at the new diff that is presented, once you agree with the changes, write a new commit message, and commit the changes you've made to your new branch. \\ \\ % 8
+        \item Look at the new diff that is presented, once you agree with the changes, write a new commit message, and commit the changes you have made to your new branch. \\ \\ % 8
         \includegraphics{screenshots/shot8.bmp}
     \end{enumerate}
     Once you have finalized your commit, publish the branch (using the same button you used to publish the repository). \\
@@ -124,20 +124,21 @@
     \includegraphics{screenshots/shot12.bmp} \\ \\
     \includegraphics{screenshots/shot13.bmp}
     \\ \\ \\
-    Accept the invitation your partner has sent you, and edit their repository directly on Github.com; specifically, add your own name to their README. Commit these changes directly to the master branch. Once your partner has done the same to your repo, fetch the changes from Github. On your own machine, you should now select ``Pull origin''. Your partners' name in now in your own README. \\ \\ % 14 % 15
+    Accept the invitation your partner has sent you, and edit their repository directly on Github.com; specifically, add your own name to \emph{their} README. Commit these changes directly to the master branch. Once your partner has done the same to your repo, fetch the changes from Github. On your own machine, you should now select ``Pull origin''. Your partners' name is now in your own README. \\ \\ % 14 % 15
     \includegraphics{screenshots/shot14.bmp} \\ \\
     \includegraphics{screenshots/shot15.bmp}
     \\ \\
-    In the background, Git handled the file combination in a way that was non-destructive; by default, Git will always \textbf{try} to do this. In practice, there will be times when pulling changes will force \emph{destructive} changes to be made. When this happens, Git will, most likely, prompt you with a ``Merge Conflict'' warning, do not panic if this happens, Git is only trying to save your own code.
+    In the background, Git handled the file combination in a way that was non-destructive; by default, Git will always \textbf{try} to do this. In practice, there will be times when pulling changes will force \emph{destructive} changes to be made. When this happens, Git will, most likely, prompt you with a ``Merge Conflict'' warning. \textbf{Do not panic if this happens}. Git is only trying to save your own code.
 
     \includegraphics{screenshots/shot015.bmp}
 
     \section{Wrapping up}
-    To submit this lab, you'll need to generate a Git Log. To do this, select ``Repository'', then select ``Open in Command Prompt''. This will prompt you to install Git, if the program cannot find Git on your system. If you do not have Git installed, take a moment to do so now, you will need it to submit your work for this lab. \\ \\ % 16 % 17
+    To submit this lab, you will need to generate a Git Log. To do this, select ``Repository'', then select ``Open in Command Prompt''. This will prompt you to install Git, if the program cannot find Git on your system. If you do not have Git installed, take a moment to do so now. You will need it to submit your work for this lab. \\ \\ % 16 % 17
     \includegraphics{screenshots/shot16.bmp} \\ \\
     \includegraphics{screenshots/shot17.bmp}
     \\
-    Once Git is installed, reboot the Github Application, then hit the ``Open in Command Prompt'' button once again, this should open up a new command prompt set to the appropriate location. 
+    Once Git is installed, restart the Github Application, then hit the ``Open in Command Prompt'' button once again, this should open up a new command prompt set to the appropriate location. \\ \\
+    \includegraphics{screenshots/shot18.bmp}
     \\ \\
     Now, run the command \verb|git log|, and examine the output. Once you are satisfied that this is the proper Git Log, hit the key 'q' to quit. Looking at the command prompt output is well and good, but it is much more useful to have this output be written to a log. To do so, run the command \verb|git log >> log.txt|, and look at the contents of your repo. You should see a file called ``log.txt'', which contains the \verb|git log| of the repo, ``piped'' into the file. 
     \\ \\
@@ -145,7 +146,7 @@
     \section{Submission}
     Submit the README.md, and the log.txt file to Mimir.
 
-    \section{In case of fire:}
+    \section{In Case of Fire}
     \begin{enumerate}
         \item \texttt{git commit -a}
 
