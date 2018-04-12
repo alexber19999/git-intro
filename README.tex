@@ -13,21 +13,20 @@
     \tableofcontents
     
     \section{About}
-    Git is one of the most helpful tools a developer can have at his or her disposal. It practically gives you super powers, allowing you to roll back undesirable changes, quickly switch between development tasks, and organize all of your projects - for free.
+    Git is one of the most helpful tools a developer can have at his or her disposal. It practically gives you super powers, allowing you to roll back undesirable changes, quickly switch between development tasks, and organize all of your projects - for free. \\ \\
     
     \section{Downloading Github Desktop}
     The first thing you should do for this lab, is download the Github Desktop client from https://desktop.github.com/. \emph{If you are on Linux, you will have to use either GitKraken, or the Command Line Interface (CLI) for this lab. Ask a TA if you need help.} \\ \\
     % 1
-    \includegraphics{screenshots/shot1.bmp}
+    \includegraphics{screenshots/shot01.bmp}
     
     \section{Initialize a Repository}
     \begin{enumerate}  
-        \item Click on ``Create new repository''.
+        \item Click on ``Create new repository''. \\ \\
+        \includegraphics{screenshots/shot1.bmp}
         
-        
-        \item Fill in the following pieces of information: \\ \\
+        \item Fill in the following pieces of information:
         % 2
-        \includegraphics{screenshots/shot2.bmp}
         
         \begin{enumerate}
             
@@ -42,6 +41,8 @@
             \item Choose C++ for the Git Ignore file
             
             \item Licence: MIT \emph{This doesn't matter, I encourage you to look at https://choosealicense.com/ if you are in doubt}
+            
+            \includegraphics{screenshots/shot2.bmp}
             
         \end{enumerate}
 
@@ -71,10 +72,12 @@
     \section{History}
     Once you have committed this change, click over to the history tab and take a look at the graphical interpretation of the current Git Log for the repository. There should be two commits at this point, one for the initial commit, and one with your initial README modifications. If this is not the case please let a TA know. \\ \\ % 5
     \includegraphics{screenshots/shot5.bmp}
+    \includegraphics{screenshots/shot05.bmp}
+
     \section{Publishing your work}
     Now select \emph{Publish Repository}, look over the suggested settings, and hit \emph{Publish repository} once you are satisfied that the options fit your needs (hint: they normally are). \\ \\ % 6
     \includegraphics{screenshots/shot6.bmp}
-    \\
+    \\ \\
     You may notice, at this point, the ``Keep this code private'' option; this is highly valuable while you are a student, as it lets you host your assignments on Github, and not violate any academic codes. As students, you get unlimited private repositories for free, after signing up for the Github Student Pack (https://education.github.com/pack).
     \\ \\
     If you are anything like your TAs you will be eternally grateful for the online copies of your work when your system inevitably crashes fatally the night before a project is due.
@@ -104,29 +107,34 @@
         \item Look at the new diff that is presented, once you agree with the changes, write a new commit message, and commit the changes you've made to your new branch. \\ \\ % 8
         \includegraphics{screenshots/shot8.bmp}
     \end{enumerate}
-    Once you have finalized your commit, publish the branch (using the same button you used to publish the repository).
+    Once you have finalized your commit, publish the branch (using the same button you used to publish the repository). \\
+
+    \includegraphics{screenshots/shot08.bmp}
 
     \section{Merging}
     Merging changes allows you to take changes from branches and \emph{merge} them with the \emph{master} branch. To do this in your repository, first select ``Current Branch'', and select \emph{master}. \\ \\ % 9
     \includegraphics{screenshots/shot9.bmp}
-    \\
+    \\ \\
     Now, select ``Branch'' from the top menu, and select ``Merge into current branch''. Then, select the branch you've just made, and click ``Merge into Master''. Once the changes have been merged into the master branch, you must \textbf{push} these changes to Github. To do this, select ``Push to origin'' from the top menu. Once it is done loading, navigate to Github.com and examine your new repo! \\ \\ % 10 % 11
-    \includegraphics{screenshots/shot10.bmp} \\
+    \includegraphics{screenshots/shot10.bmp} \\ \\
     \includegraphics{screenshots/shot11.bmp}
+
     \section{Collaboration}
     Github allows you to collaborate with people in a highly efficient way. To demonstrate this, go to ``Repository'', then select ``View on Github''. Once the page loads, notice that the README.md is rendered as HTML, then navigate to ``Settings'', then to ``Collaborators''. Invite your lab partner to collaborate on your repository. \\ \\ % 12 % 13
-    \includegraphics{screenshots/shot12.bmp} \\
+    \includegraphics{screenshots/shot12.bmp} \\ \\
     \includegraphics{screenshots/shot13.bmp}
-    \\
+    \\ \\ \\
     Accept the invitation your partner has sent you, and edit their repository directly on Github.com; specifically, add your own name to their README. Commit these changes directly to the master branch. Once your partner has done the same to your repo, fetch the changes from Github. On your own machine, you should now select ``Pull origin''. Your partners' name in now in your own README. \\ \\ % 14 % 15
-    \includegraphics{screenshots/shot14.bmp} \\
+    \includegraphics{screenshots/shot14.bmp} \\ \\
     \includegraphics{screenshots/shot15.bmp}
-    \\
+    \\ \\
     In the background, Git handled the file combination in a way that was non-destructive; by default, Git will always \textbf{try} to do this. In practice, there will be times when pulling changes will force \emph{destructive} changes to be made. When this happens, Git will, most likely, prompt you with a ``Merge Conflict'' warning, do not panic if this happens, Git is only trying to save your own code.
+
+    \includegraphics{screenshots/shot015.bmp}
 
     \section{Wrapping up}
     To submit this lab, you'll need to generate a Git Log. To do this, select ``Repository'', then select ``Open in Command Prompt''. This will prompt you to install Git, if the program cannot find Git on your system. If you do not have Git installed, take a moment to do so now, you will need it to submit your work for this lab. \\ \\ % 16 % 17
-    \includegraphics{screenshots/shot16.bmp} \\
+    \includegraphics{screenshots/shot16.bmp} \\ \\
     \includegraphics{screenshots/shot17.bmp}
     \\
     Once Git is installed, reboot the Github Application, then hit the ``Open in Command Prompt'' button once again, this should open up a new command prompt set to the appropriate location. 
@@ -136,4 +144,13 @@
     Commit the \emph{log.txt} file to your \textbf{master branch}.
     \section{Submission}
     Submit the README.md, and the log.txt file to Mimir.
+
+    \section{In case of fire:}
+    \begin{enumerate}
+        \item \texttt{git commit -a}
+
+        \item \texttt{git push}
+
+        \item \texttt{leave building}
+    \end{enumerate}
 \end{document}
